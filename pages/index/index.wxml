@@ -1,0 +1,20 @@
+<view class="main" style=''>
+    <view class='app-name'>青年志愿者信息管理系统</view>
+    <form bindsubmit="formSubmit">
+        <view class='section'>
+            <image src='/images/icon/account_icon.png' class='account'></image>
+            <view class='input'>
+                <input placeholder='请输入账号' name="loginAccount" />
+            </view>
+        </view>
+        <view class='section_password'>
+            <image src='/images/icon/password_icon.png' class='password'></image>
+            <view class='input'>
+                <input placeholder='请输入密码' type="password" name="loginPassword" />
+            </view>
+        </view>
+        <view>
+            <button class='commit' type='primary' form-type='submit'>登 陆</button>
+        </view>
+    </form>
+</view>
