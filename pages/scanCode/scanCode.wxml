@@ -1,4 +1,6 @@
 <view class="view">
-  <image class="cover-9" src="/images/01.jpg" bindtap="img"></image>
-  <button type="primary" bindtap="scan" id="scan">扫一扫</button>
+  <button type="primary" bindtap="scan" id="scan">扫码签到</button>
+  <view wx:if="{{result !=''}}">
+    <view>扫码的内容:{{result}}</view>
+  </view>
 </view>

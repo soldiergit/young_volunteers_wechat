@@ -1,15 +1,16 @@
 {
 	"pages": [
-		"pages/index/index",
 		"pages/main/main",
+		"pages/index/index",
 		"pages/scanCode/scanCode",
 		"pages/activity/activity",
-		"pages/signin/signin",
+		"pages/activity/activity-detail/activity-detail",
+		"pages/volunteerSignUp/volunteerSignUp",
 		"pages/logs/logs"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#008000",
+		"navigationBarBackgroundColor": "#ffffff",
 		"navigationBarTitleText": "WeChat",
 		"navigationBarTextStyle": "black"
 	},
@@ -36,10 +37,10 @@
 				"selectedIconPath": "images/tab/attendance_hl.png"
 			},
 			{
-				"pagePath": "pages/signin/signin",
-				"text": "签到管理",
-				"iconPath": "images/tab/signin.png",
-				"selectedIconPath": "images/tab/signin_hl.png"
+				"pagePath": "pages/volunteerSignUp/volunteerSignUp",
+				"text": "报名列表",
+				"iconPath": "images/tab/volunteerSignUp.png",
+				"selectedIconPath": "images/tab/volunteerSignUp_hl.png"
 			}
 		]
 	},

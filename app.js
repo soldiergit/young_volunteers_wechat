@@ -37,6 +37,17 @@ App({
           })
         }
       }
+
+	  //如果用户初次进来点击登录拒绝了授权，应在 wx.getUserInfo 的失败回调函数中兼容此场景
+	//   fail: () => {
+	// 		//隐藏loading框
+	// 		wx.hideLoading();
+	// 		//提示用户授权
+	// 		wx.showToast({
+	// 			title: '你已拒绝授权，请授权再使用',
+	// 			icon: 'none'
+	// 		});
+	// 	}
     })
   },
 })
