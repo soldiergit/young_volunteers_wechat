@@ -1,0 +1,71 @@
+.signup-container {
+    display: flex; /*指定是弹性盒子模型*/
+    flex-direction: column; /*指定弹性方向-->列方向*/
+    margin-top: 20rpx; /*指定上边距*/
+    margin-bottom: 40rpx; /*指定下边距*/
+    margin-left: 0rpx;
+    background-color: #fff; /*指定背景颜色*/
+    border-bottom: 1px solid #ededed; /*底部边线*/
+    border-top: 1px solid #ededed; /*顶部边线*/
+    padding-bottom: 5px;
+}
+
+.signup-data {
+    margin: 20rpx 0 0 10rpx; /*上右下左*/
+}
+
+.signup-leader-img {
+    width: 60rpx;
+    height: 60rpx;
+    vertical-align: middle; /*垂直居中*/
+}
+
+.signup-leader-name {
+    font-size: 26rpx;
+    margin-bottom: 10px; /*指定下边距*/
+    margin-left: 20rpx; /*指定左边距*/
+    vertical-align: middle; /*垂直居中*/
+}
+
+.signup-title {
+    font-size: 34rpx;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px; /*指定下边距*/
+    margin-left: 10px; /*指定左边距*/
+}
+
+.signup-image {
+    width: 100%;
+    height: 340rpx;
+    margin: auto 0;
+    margin-bottom: 15px; /*指定下边距*/
+}
+
+.signup-content {
+    color: #666;
+    font-size: 28rpx;
+    margin-left: 20px; /*指定左边距*/
+    margin-bottom: 20px; /*指定下边距*/
+    letter-spacing: 2rpx; /*文本间距*/
+    line-height: 40rpx; /*文字行高*/
+}
+
+.signup-like {
+    font-size: 13px;
+    /*flex-direction: column;!*指定弹性方向-->行方向*!*/
+    line-height: 16px; /*文字行高*/
+    margin-left: 10px; /*指定左边距*/
+}
+
+.signup-like-image {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px; /*右边距*/
+    vertical-align: middle; /*垂直居中*/
+}
+
+.signup-like-font {
+    vertical-align: middle; /*垂直居中*/
+    margin-right: 20px; /*右边距*/
+}

@@ -1,0 +1,9 @@
+<template name="volunteerSignUpItem">
+    <view class="signup-container">
+    <!--<view class="signup-data">-->
+        <text class="signup-title">志愿者姓名：{{volunteerName}}</text>
+        <!-- <image class="signup-image" src="{{imgSrc}}"></image> -->
+        <text class="signup-content">活动内容：{{activityContent}}</text>
+        <text class="signup-content">是否签到：{{signIn == 1 ? '已签到' : '未签到'}}</text>
+    </view>
+</template>

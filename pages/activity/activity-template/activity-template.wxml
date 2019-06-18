@@ -1,0 +1,21 @@
+<template name="activityItem">
+    <view class="activity-container">
+        <view class="activity-leader-data">
+            <!-- <image class="activity-leader-img" src="{{avatar}}"></image> -->
+            <text class="activity-leader-name">活动负责人：{{activityLeader}}</text>
+        </view>
+    </view>
+    <text class="activity-title">标题：{{activityTitle}}</text>
+    <!-- <image class="activity-image" src="{{imgSrc}}"></image> -->
+    <text class="activity-content">内容：{{activityContent}}</text>
+    <!-- <view class="activity-like">
+        <image class="activity-like-image" src="../../images/icon/chat.png"></image>
+        <text class="activity-like-font">{{collection}}</text>
+        <image class="activity-like-image" src="../../images/icon/view.png"></image>
+        <text class="activity-like-font">{{reading}}</text>
+        <image class="activity-like-image" src="../../images/icon/chat.png"></image>
+        <text class="activity-like-font">{{collection}}</text>
+        <image class="activity-like-image" src="../../images/icon/view.png"></image>
+        <text class="activity-like-font">{{reading}}</text>
+    </view> -->
+</template>

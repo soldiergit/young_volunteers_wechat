@@ -1,0 +1,18 @@
+<import src="signup-template/signup-template.wxml" />
+<view class='search'>
+    <!-- https://developers.weixin.qq.com/miniprogram/dev/component/icon.html -->
+    <icon type="search" size='18' color='#405f80' class='search-icon'></icon>
+    <!-- https://developers.weixin.qq.com/miniprogram/dev/component/input.html -->
+    <input type='text' placeholder='请输入志愿者姓名或活动编号' placeholder-class='placeholder' bindfocus='onBindFocus' bindblur='onBindblur' />
+    <icon wx:if="{{searchPanelShow}}" type="cancel" size='18' color='red' class='search-icon' bindtap='cancelClick'></icon>
+	  <!-- <image wx:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" bindtap="cancelClick"></image> -->
+</view>
+<view>
+    <!-- block 相当于一个括号 item默认为item 下标默认为index -->
+    <block wx:for="{{volunteerSignUpData}}" wx:for-item="item" wx:for-index="index">
+        <view catchtap="activityDetail" data-activityId="{{item.signUpId}}">
+            <template is="volunteerSignUpItem" data="{{...item}}" />
+        </view>
+    </block>
+</view>
+
