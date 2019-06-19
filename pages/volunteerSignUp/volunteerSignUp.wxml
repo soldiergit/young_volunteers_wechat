@@ -10,7 +10,7 @@
 <view>
     <!-- block 相当于一个括号 item默认为item 下标默认为index -->
     <block wx:for="{{volunteerSignUpData}}" wx:for-item="item" wx:for-index="index">
-        <view catchtap="activityDetail" data-activityId="{{item.signUpId}}">
+        <view catchtap="signUpDetail" data-signUpId="{{item.signUpId}}">
             <template is="volunteerSignUpItem" data="{{...item}}" />
         </view>
     </block>

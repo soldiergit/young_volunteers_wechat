@@ -23,7 +23,19 @@ Page({
             volunteerSignUpData: data.data,
         });
 		wx.hideNavigationBarLoading();
-    },
+	},
+
+	activityDetail: function (event) {
+		// event：是框架给我们的事件对象
+		// currentTarget：是鼠标的单击事件
+		// dataset：是我们自定义数据（data-xxx）的集合
+		//注意data-之后到第二个‘-’之前算一个单词，要这样全小写
+		var signUpId = event.currentTarget.dataset.signupid;
+		console.log("打开活动报名详情！"+ signUpId);
+		wx.navigateTo({
+			url: 'signup-detail/signup-detail?signUpId=' + signUpId,
+		})
+	},
 
     /**
      * 生命周期函数--监听页面初次渲染完成
