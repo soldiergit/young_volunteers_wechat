@@ -1,0 +1,20 @@
+<view>
+    <form bindsubmit="formSubmit">
+        <view class="original-title">
+            <text>志愿者姓名：{{signUp.volunteerName}}</text>
+        </view>
+        <view class='section'>
+            <view class='input'>
+                <input placeholder='签到情况' name="signIn" value="{{signUp.signIn}}" />
+            </view>
+        </view>
+        <view class='section_password'>
+            <view class='input'>
+                <input placeholder='活动分数' name="volunteerScore" value="{{signUp.volunteerScore}}"  />
+            </view>
+        </view>
+        <view>
+            <button class='commit' type='primary' form-type='submit'>提交</button>
+        </view>
+    </form>
+</view>

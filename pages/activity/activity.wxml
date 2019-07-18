@@ -1,17 +1,5 @@
 <import src="activity-template/activity-template.wxml" />
 <view>
-    <swiper catchtap='onSwiperTap' autoplay="true" interval='2000' indicator-dots='true' indicator-active-color='white'>
-        <swiper-item>
-            <image bindtap='onSwiperItemTap' src='/images/activity/activity1.jpeg' 													data-activityId='3'></image>
-        </swiper-item>
-        <swiper-item>
-            <image src='/images/activity/activity2.jpeg' data-activityId='4'></image>
-        </swiper-item>
-        <swiper-item>
-            <image src='/images/activity/activity3.jpeg' data-activityId='5'></image>
-        </swiper-item>
-    </swiper>
-
     <!-- block 相当于一个括号 item默认为item 下标默认为index -->
     <block wx:for="{{activityData}}" wx:for-item="item" wx:for-index="index">
         <view catchtap="activityDetail" data-activityId="{{item.activityId}}">

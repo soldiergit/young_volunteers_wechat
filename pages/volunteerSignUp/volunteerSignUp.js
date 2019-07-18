@@ -6,7 +6,10 @@ Page({
      */
     data: {
         url: "/biz/volunteersignup_findAllVolunteerSignUp.action",
-		req_data: { page: 1, limit: 20},
+        req_data: {
+            page: 1,
+            limit: 20
+        },
         volunteerSignUpData: '',
     },
 
@@ -17,23 +20,29 @@ Page({
         util.doGet(this.data.url, this.data.req_data, this.processVolunteerSignUpData)
     },
 
-	processVolunteerSignUpData: function(data) {
-		console.log(data);
+    processVolunteerSignUpData: function(data) {
+        console.log(data);
         this.setData({
             volunteerSignUpData: data.data,
         });
-		wx.hideNavigationBarLoading();
+        wx.hideNavigationBarLoading();
+    },
+
+    // 打分
+    volunteerScoring: function(event) {
+        var signUpId = event.currentTarget.dataset.signupid;
+        console.log("评分详情！" + signUpId);
+        wx.navigateTo({
+            url: 'volunteer_score_and_edit/volunteer_score_and_edit?scoring=1&signUpId=' + signUpId,
+        })
 	},
 
-	activityDetail: function (event) {
-		// event：是框架给我们的事件对象
-		// currentTarget：是鼠标的单击事件
-		// dataset：是我们自定义数据（data-xxx）的集合
-		//注意data-之后到第二个‘-’之前算一个单词，要这样全小写
+	// 修改该报名
+	volunteerScoring: function (event) {
 		var signUpId = event.currentTarget.dataset.signupid;
-		console.log("打开活动报名详情！"+ signUpId);
+		console.log("评分详情！" + signUpId);
 		wx.navigateTo({
-			url: 'signup-detail/signup-detail?signUpId=' + signUpId,
+			url: 'volunteer_score_and_edit/volunteer_score_and_edit?scoring=0&signUpId=' + signUpId,
 		})
 	},
 

@@ -9,6 +9,7 @@ Page({
 
 	onLoad: function (options) {
 		// 接收参数
+		var scoring = options.scoring;
 		var signUpId = options.signUpId;
 		var req_data = { signUpId: signUpId};
 		var url = "/biz/volunteersignup_findOneVolunteerSignUp.action";

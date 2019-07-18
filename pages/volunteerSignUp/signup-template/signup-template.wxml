@@ -5,5 +5,8 @@
         <!-- <image class="signup-image" src="{{imgSrc}}"></image> -->
         <text class="signup-content">活动内容：{{activityContent}}</text>
         <text class="signup-content">是否签到：{{signIn == 1 ? '已签到' : '未签到'}}</text>
+		
+		<button catchtap="volunteerScoring" disabled="{{signIn == 1 ? true : false}}" data-signUpId="{{signUpId}}">评分</button>
+		<button catchtap="volunteerScoreEdit" data-signUpId="{{signUpId}}">编辑</button>
     </view>
 </template>

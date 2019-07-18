@@ -1,11 +1,12 @@
 {
 	"pages": [
-		"pages/main/main",
 		"pages/index/index",
+		"pages/main/main",
 		"pages/scanCode/scanCode",
 		"pages/activity/activity",
 		"pages/activity/activity-detail/activity-detail",
 		"pages/volunteerSignUp/volunteerSignUp",
+		"pages/volunteerSignUp/volunteer_score_and_edit/volunteer_score_and_edit",
 		"pages/logs/logs"
 	],
 	"window": {
